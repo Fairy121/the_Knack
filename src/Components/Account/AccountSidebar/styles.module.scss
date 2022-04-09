@@ -1,0 +1,68 @@
+@use "../../../Theme/theme" as *;
+.accountSidebar {
+  width:200px;
+  top:0px;
+  text-align:left;
+  font-size:1rem;
+
+  position: sticky;
+  .inner {
+    width:80%;
+    margin:0 auto;
+  }
+  .flex {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    padding: 0.8em 0em;
+  }
+}
+.accountSidebar nav {
+  background: $gray-200;
+
+  .navItem {
+    padding: 1em 0em;
+    &.selected {
+      background: #E4DEFF;
+      color: #6050B6;
+    }
+    &:not(:first-child) {
+      border-bottom:1px solid #e8e8e8;
+    }
+
+  }
+
+  p {
+    font-size:1em;
+    color: $gray-600;
+    &:not(:first-child) {
+      margin-top:0.9em;
+    }
+    &.selected {
+      background: #ffdb4d;
+      color: $primary-600;
+      font-weight:bold;
+
+      border-radius:0.2em;
+      padding: 0.8em 0.8em;
+    }
+  }
+}
+.accountHeader {
+  display:flex;
+  align-items:center;
+  justify-content: flex-start;
+  gap:1em;
+  color:$gray-700;
+  background: $gray-200;
+  border-bottom: 1px solid #e8e8e8;
+  .profile {
+    width:40px;
+    height:40px;
+    background: $gray-700;
+    border-radius:100px;
+  }
+  p {
+    font-size:1em;
+  }
+}

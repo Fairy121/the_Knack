@@ -1,0 +1,122 @@
+@use "../../Theme/theme" as *;
+.mixerSection {
+  width: 70%;
+  margin: 0 auto;
+  margin-top:4rem;
+  text-align: left;
+  header {
+    background: #7863f2;
+    border-radius:0.2em;
+    display: flex;
+    .textSection {
+      flex: 1;
+      padding: 4rem 2rem;
+    }
+    p {
+      font-weight: 600;
+      color: #ded9ff;
+      margin-top:1em;
+    }
+    h4 {
+      font-size:1.4em;
+      color: #ded9ff;
+      line-height: 1.2em;
+      width: 80%;
+      span {
+        color: $gray-200;
+        font-weight: bold;
+      }
+    }
+    
+  }
+}
+
+.joinMixerSection {
+  flex: 1;
+  .joinMixerImage {
+    background: url('https://cdn.dribbble.com/users/2217210/screenshots/11601200/media/84d06322003b855978cacd1e32421a8d.jpg?compress=1&resize=400x300&vertical=top') center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+.mixerButtonContainer {
+  background: hsl(248, 100%, 93%);
+  display: inline-flex;
+  align-items: center;
+  padding: 0.8em 2em;
+  border-radius: 0.2em;
+  margin-top:0.8em;
+  gap: 0.6em;
+  svg {
+    color: #4733b9;
+  }
+}
+
+.visitMixerButton {
+  border-radius:0.4em;
+  outline:none;
+  border-style:none;
+  border-radius:0.2em;
+  background: none;
+  color: #4733b9;
+  font-weight: bold;
+}
+.textBox {
+  display: flex;
+  align-items: baseline;
+  gap:0.9em;
+  margin-top:1em;
+  &Center {
+    @extend .textBox;
+    align-items: center;
+  }
+  svg {
+    color: $gray-200;
+    margin-top:0.4em;
+  }
+
+}
+.notificationText {
+  font-size:0.9em;
+  font-weight: bold;
+  color: $gray-200;
+
+}
+
+.mixerDetails {
+  background: $gray-200;
+
+  .topDetails {
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem 0rem;
+    display: flex;
+    align-items: top;
+    gap: 4em;
+    .mixerDetailPara {
+      color: $gray-700;
+      margin-top:0.8em;
+      line-height:1.5em;
+    }
+  }
+}
+
+
+.guestsSection {
+  padding: 0em 2em;
+
+}
+.guestProfile {
+    width:60px;
+    height: 60px;
+    background: gainsboro;
+    border-radius: 100em;
+}
+
+.subHeading {
+  font-size:1.4em;
+  color: $gray-600;
+}

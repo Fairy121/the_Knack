@@ -1,0 +1,20 @@
+.eventsHeader{
+  margin: 0 auto;
+  width: 80%;
+  margin-top: 4rem;
+  > div {
+    width: 100%;
+  }
+}
+
+.events {
+  display:flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 1.4rem;
+  width:80%;
+  margin: 0 auto;
+  margin-top:2rem;
+  height: 0%;
+  margin-bottom: 4em;
+}

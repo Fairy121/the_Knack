@@ -1,0 +1,140 @@
+@use "../../../Theme/theme" as *;
+
+.card {
+  display:flex;
+  flex-direction: column;
+  flex-basis: 350px;
+  font-size:1rem;
+  .cardImage {
+    background-image: url('https://cdn.dribbble.com/users/2417453/screenshots/5852498/helllooo___1_4x.png');
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height:200px;
+    border-radius:0.2em 0.2em 0em 0em;
+    width:100%;
+  }
+  .cardContent {
+    background: $gray-200;
+    border-radius:0em 0em 0.2em 0.2em;
+
+  }
+}
+
+.cardContextText {
+  padding:1em 1em 0em 1em;
+}
+.contentHeader{
+  display:flex;
+  align-items:baseline;
+  justify-content: space-between;
+  padding: 1em 0.8em;
+  h4 {
+    color:$gray-700;
+    font-size:1em;
+    font-weight: 600;
+    font-family: 'Roboto',sans-serif;
+  }
+  .textBox {
+    p:first-of-type {
+      color: #8270eb;
+    }
+    p {
+      color: $gray-600;
+      font-weight: bold;
+      font-size:0.8em;
+    }
+  }
+}
+
+.textBox {
+  display:flex;
+  align-items: baseline;
+  gap:0.4em;
+
+}
+.userInfo {
+  margin-top:0.4em;
+  margin-bottom:0.7em;
+  display: flex;
+  flex-wrap: wrap;
+  gap:0.8em;
+  align-items: center;
+  .textBox {
+    font-size:0.8em;
+    align-items: center;
+    font-weight: bold;
+    color: $gray-700;
+
+    .accentText {
+      color: #806af7;
+    }
+    svg {
+      font-size:1.2em;
+    }
+  }
+}
+
+
+.userConnection {
+  svg {
+    background: $primary-500;
+    color: #C18E0E;
+    font-size:1.8em;
+    padding: 0.2em;
+    border-radius: 0.2em;
+  
+  }
+}
+
+.flexSection {
+  margin-top: 0.5em;
+  margin-bottom:1.2em;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 0.6em;
+
+}
+
+.tag {
+  background: #ededed;
+  border-radius: 0.2em;
+  padding: 0.4em 0.6em;
+  color: #333;
+  display: inline-block;
+}
+
+.interestsSection {
+  margin-top: 0.8em;
+  .flexSection {
+    margin-bottom: 0.4em;
+  }
+  .interestTag {
+    background: none;
+    padding-right: 0.8em;
+    font-size:0.8em;
+    position: relative;
+    &:not(:last-child) {
+      &::before {
+        content: "";
+        position:absolute;
+        height: 100%;
+        width:5px;
+        left: 0%;
+        border-right: 2px solid $gray-500;
+        width: 100%; 
+      }
+    }
+  }
+  h4 {
+    font-size:0.8em;
+    color: $gray-700;
+    font-family: 'Roboto',sans-serif;
+    text-align: left;
+  }
+}
+
+.visitProfileButton {
+  color: $gray-700;
+}

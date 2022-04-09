@@ -1,0 +1,19 @@
+.mentors {
+  display:flex;
+  flex-wrap: wrap;
+  gap: 1.4rem;
+  width:80%;
+  margin: 0 auto;
+  margin-top:2rem;
+  margin-bottom: 4em;
+}
+
+
+
+
+
+@media only screen and (max-width: 870px) {
+  .mentors {
+    width: 90%;
+  }
+}

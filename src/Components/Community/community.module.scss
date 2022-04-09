@@ -1,0 +1,12 @@
+@use "../../Theme/theme" as *;
+.communitySection {
+  width:80%;
+  margin:0 auto;
+  margin-top:4rem;
+  .heading {
+    @extend .largeHeading;
+    &:not(:first-child) {
+      margin-top:4rem;
+    }
+  }
+}
